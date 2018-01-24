@@ -50,6 +50,7 @@ class MarkupProps(object):
 		for prop in self.properties:
 			if prop['start'] == start and prop['end'] == end:
 				prop['properties'].update({label:value})
+                                break
 		else:
 			new_prop = 	{
 							'properties': {label:value},
